@@ -1,4 +1,4 @@
-workflow "lint & test" {
+workflow "lint, test, publish" {
   on = "push"
   resolves = ["lint", "test", "publish"]
 }
@@ -25,5 +25,6 @@ action "publish" {
   uses = "primer/publish@v1.0.0"
   secrets = [
     "GITHUB_TOKEN",
+    "NPM_AUTH_TOKEN",
   ]
 }
