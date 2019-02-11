@@ -5,7 +5,7 @@ workflow "lint & test" {
 
 action "install" {
   uses = "actions/npm@master"
-  args = "ci"
+  args = ["--unsafe-perm", "ci"]
 }
 
 action "lint" {
@@ -17,7 +17,7 @@ action "lint" {
 action "test" {
   needs = "install"
   uses = "actions/npm@master"
-  args = "test"
+  args = ["--unsafe-perm", "test"]
 }
 
 action "publish" {
