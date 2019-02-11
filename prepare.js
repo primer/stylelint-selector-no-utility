@@ -1,3 +1,4 @@
+// eslint-disable no-console
 const {join} = require('path')
 const {writeFile} = require('fs-extra')
 const utilities = require('@primer/css/dist/utilities')
