@@ -4,9 +4,7 @@
   "description": "Stylelint rule that doesn't allow the styling of utility classes in CSS",
   "main": "index.js",
   "scripts": {
-    "prepare": "node prepare.js",
     "lint": "eslint .",
-    "pretest": "npm run prepare",
     "test": "node test/index.js"
   },
   "keywords": [
