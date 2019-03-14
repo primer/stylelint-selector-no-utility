@@ -25,6 +25,9 @@ testRule(rule.rule, {
     },
     {
       code: '.foo.m-0 { color: #fff; }'
+    },
+    {
+      code: '.border-black-fade { color: #fff; }'
     }
   ]
 })
